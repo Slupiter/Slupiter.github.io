@@ -19,7 +19,8 @@
     <meta name="keywords" content="">
 
 
-    <meta name="description" content="">
+    <meta name="description" content="段错误什么是段错误段错误是指程序尝试访问一段不可访问的内存。
+产生段错误的原因程序运行过程中能访问到的空间主要有栈和堆，站存放了函数的本地变量，堆是程序运行过程中能够自由分配和使用的内存空间。产...">
 
 
 
@@ -31,7 +32,7 @@
     <!--Title-->
 
 
-<title>Archives: 2019/2 | Slupiter</title>
+<title>Slupiter</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Slupiter" type="application/atom+xml">
@@ -132,173 +133,146 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content ">
-                    <div id="main">
-     <div class="timebox">
-          <div class="timeline">
-              <ul>
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="">
+            
+	            NO Title!
+            
+        </h1>
+        <div class="post-meta">
+    
+        <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+            
+        </span>
+    
+
+    
+        <span class="fa-wrap">
+            <i class="fa fa-tags"></i>
+            <span class="tags-meta">
                 
-                
-                    
-                    
-                        
-                            
-                            <h2>2019</h2>
-                        
-                        
-                          <li class="">
-                        
-                            <h3>
-                              28<span>02月</span>
-                            </h3>
-                            <a href="/2019/02/28/PAT 错误/" title="" target="_blank"></a>
-                        </li>
-                    
-                
-                    
-                    
-                        
-                        
-                          <li class="">
-                        
-                            <h3>
-                              02<span>02月</span>
-                            </h3>
-                            <a href="/2019/02/02/WHUER/" title="WHUER" target="_blank">WHUER</a>
-                        </li>
-                    
-                
-              </ul>
-          </div>
-    </div>
+            </span>
+        </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2019/02/28</span>
+        </span>
+        
+            <span class="fa-wrap">
+                <i class="fa fa-eye"></i>
+                <span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    
 </div>
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="段错误"><a href="#段错误" class="headerlink" title="段错误"></a>段错误</h1><h3 id="什么是段错误"><a href="#什么是段错误" class="headerlink" title="什么是段错误"></a>什么是段错误</h3><p>段错误是指程序尝试访问一段不可访问的内存。</p>
+<h3 id="产生段错误的原因"><a href="#产生段错误的原因" class="headerlink" title="产生段错误的原因"></a>产生段错误的原因</h3><p>程序运行过程中能访问到的空间主要有栈和堆，站存放了函数的本地变量，堆是程序运行过程中能够自由分配和使用的内存空间。产生段错误和栈、堆的访问密切相关。</p>
+<p>原因主要有：</p>
+<ul>
+<li>解引用空指针</li>
+<li>访问不可访问的内存空间（如内核空间）</li>
+<li>访问不存在的内存地址</li>
+<li>栈溢出（递归函数调用）</li>
+<li>使用未初始化的指针（定义时没有初始化或已经回收）<h3 id="避免段错误"><a href="#避免段错误" class="headerlink" title="避免段错误"></a>避免段错误</h3></li>
+<li><p>输入语句变量加取地址符&amp;（数组名不用，本身代表首地址）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a;</span><br><span class="line">scanf(&quot;%d&quot;,&amp;a);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>定义指针后初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node* root = NULL;</span><br><span class="line">node* root = new node;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数组下标不越界</p>
+</li>
+<li>在堆上分配空间是否够用（内存限制）</li>
+<li>变量处理格式控制是否合理</li>
+</ul>
+
+    </div>
+    
+        <div class="reward" ontouchstart="">
+    <div class="reward-wrap">赏
+        <div class="reward-box">
+            
+            
+                <span class="reward-type">
+                    <img class="wechat" src="../img/reward-wepay.jpg"><b>微信打赏</b>
+                </span>
+            
+        </div>
+    </div>
+    <p class="reward-tip">赞赏是不耍流氓的鼓励</p>
+</div>
+
+
+    
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Slupiter</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+        <a href="/2019/02/02/WHUER/" class="next-post btn btn-default" title="WHUER">
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">WHUER</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+	
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMzA1MS85NjEz">
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+</div>
+
+
+    </div>
+
+
 
 
 
                 </main>
                 
-                    
-    <aside class="col-md-4 sidebar">
-        
-        
+                    <aside id="article-toc" role="navigation" class="col-md-4">
     <div class="widget">
-        <h3 class="title">Search</h3>
-        <div id="search-form">
-            <div id="result-mask" class="hide"></div>
-            <div class="search-area">
-                
-                    <input id="search-key" type="search" autocomplete="off" placeholder="Search What？">
-                    <button type="button" class="search-form-submit" id="search-local">localSearch</button>
-                
-                
-                    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Google Search"><button type="submit" class="search-form-submit">谷歌搜索</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-                
-            </div>
-            <div id="result-wrap" class="hide">
-                <div id="search-result"></div>
-            </div>
-            <div class="hide">
-                <template id="search-tpl">
-                    <div class="item">
-                        <a href="/{path}" title="{title}">
-                            <div class="title">{title}</div>
-                            <div class="content">{content}</div>
-                        </a>
-                    </div>
-                </template>
-            </div>
-        </div>
-    </div>
-
+        <h3 class="title">Table of Contents</h3>
         
-        
-    <div class="widget">
-        <h3 class="title">Notification</h3>
-        <div class="notification">
-            <p>
-    站主github：<a href="https://github.com/Slupiter">Slupiter</a>
-</p>
-        </div>
-    </div>
-
-        
-        
-    <div class="widget">
-      <h3 class="title">Social</h3> 
-        <div class="content social">
-            
-	            <a href="//github.com/Slupiter" rel="external nofollow" title="Github" target="_blank">
-			    	<i class="git fa fa-git"></i>
-			    </a>
-            
-	            <a href="mailto:snippet@91h5.cc" rel="external nofollow" title="邮箱" target="_blank">
-			    	<i class="envelope-o fa fa-envelope-o"></i>
-			    </a>
-            
-	            <a href="/" rel="external nofollow" title="联系QQ" target="_blank">
-			    	<i class="qq fa fa-qq"></i>
-			    </a>
-            
-	            <a href="/" rel="external nofollow" title="微信" target="_blank">
-			    	<i class="weixin fa fa-weixin"></i>
-			    </a>
-            
-	            <a href="/" rel="external nofollow" title="QQ群" target="_blank">
-			    	<i class="users fa fa-users"></i>
-			    </a>
-            
-	            <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
-			    	<i class="feed fa fa-feed"></i>
-			    </a>
-            
-        </div>
-    </div>
-
-
-        
-        
-    <div class="widget">
-        <h3 class="title">Categories</h3>
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/app/"><i class="fa" aria-hidden="true">app</i></a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/app/front-end/"><i class="fa" aria-hidden="true">front-end</i></a><span class="category-list-count">1</span></li></ul></li></ul>
-    </div>
-
-
-        
-        
-    <div class="widget">
-        <h3 class="title">Archives</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/"><i class="fa" aria-hidden="true">2019年02月</i></a><span class="archive-list-count">2</span></li></ul>
-    </div>
-
-
-        
-        
-  <div class="widget">
-    <h3 class="title">Tag Cloud</h3>
-    <div class="content tag-cloud">
-        
-            <canvas width="300" height="300" id="tag-cloud-3d">
-                <a href="/tags/uni-app/" style="font-size: 10px;">uni-app</a>
-            </canvas>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#段错误"><span class="toc-text">段错误</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是段错误"><span class="toc-text">什么是段错误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#产生段错误的原因"><span class="toc-text">产生段错误的原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#避免段错误"><span class="toc-text">避免段错误</span></a></li></ol></li></ol>
         
     </div>
-  </div>
-
-
-        
-        
-    <div class="widget">
-        <h3 class="title">Friends</h3>
-        <div class="content friends-link">
-        
-            <a href="https://hexo.io/zh-cn/" class="fa" target="_blank">Hexo官网</a>
-        
-        </div>
-    </div>
-
-
-        
-    </aside>
+</aside>
 
                 
             </div>
@@ -351,8 +325,6 @@
     </div>
 </div>
 
-
-	<script src="/js/search.js?rev=@@hash"></script>
 
 
 
